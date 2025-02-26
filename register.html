@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <center>
+      <h1>Register</h1>
+      <form action="login.html" method="post">
+        <fieldset>
+          <legend>Isi Data Diri Anda</legend>
+          <table border="0" cellpadding="3" cellspacing="0">
+            <tr>
+              <td>
+                <label for="email">Email</label>
+              </td>
+              <td colspan="3">
+                <input type="email" name="email" id="email" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="username">Username</label>
+              </td>
+              <td colspan="3">
+                <input type="username" name="username" id="username" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="password">Password</label>
+              </td>
+              <td colspan="3">
+                <input type="password" name="password" id="password" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="kelamin">Jenis Kelamin</label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="kelamin"
+                  id="laki-laki"
+                  value="laki-laki"
+                  required
+                />
+                <label for="laki-laki">Laki-laki</label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="kelamin"
+                  id="perempuan"
+                  value="perempuan"
+                  required
+                />
+                <label for="perempuan">Perempuan</label>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="alamat">Alamat</label>
+              </td>
+              <td colspan="3">
+                <textarea
+                  name="alamat"
+                  id="alamat"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="jurusan">Jurusan</label>
+              </td>
+              <td colspan="3">
+                <select name="jurusan" id="jurusan" required>
+                  <option disabled selected>Pilih Jurusan</option>
+                  <option value="RPL">RPL</option>
+                  <option value="PGPAUD">PGPAUD</option>
+                  <option value="PGSD">PGSD</option>
+                  <option value="Tekkom">Tekkom</option>
+                  <option value="Multimedia">Multimedia</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <button type="submit">Register</button>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </center>
+  </body>
+</html>
