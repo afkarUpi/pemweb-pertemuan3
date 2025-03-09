@@ -1,0 +1,253 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+
+
+
+
+
+
+
+*/
+/* HTML */
+
+/* 
+
+INDEX PAGE
+
+*/
+
+html, * {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 10px 8px 1px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+
+div.container {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+div.nav-container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+div.logo {
+  height: 10vh;
+  border-bottom: 1px solid #c9c9c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+div.logo ul li a {
+  font-size: 30pt;
+}
+
+div.logo ul li a span {
+  background: linear-gradient(to right, rgb(255, 71, 71), #f6bd4c);
+  background-clip: text;
+  color: transparent;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+div.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+div.menu ul {
+  display: flex;
+  column-gap: 20px;
+  flex-direction: row;
+  height: 100%;
+}
+
+div.menu ul li {
+  height: 100%;
+}
+
+div.menu ul li a {
+  padding: 8px 16px;
+  height: 100px;
+  border-radius: 14%;
+  transition: 300ms;
+}
+
+div.menu ul li a:hover {
+  background-color: #ececec;
+}
+
+div.main-content {
+  display: grid;
+  grid-template-columns: auto 30%;
+  gap: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #444;
+  text-align: justify;
+  font-stretch: 100%;
+  line-height: 1.3rem;
+}
+
+div.food-banner {
+  height: 23vh;
+  font-size: 24pt;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../img/food-vector-pattern.jpg);
+  background-repeat: repeat-x;
+  overflow-x: visible;
+  margin-bottom: 4rem;
+  z-index: 100;
+}
+
+div.img-hero img {
+  border-radius: 5px;
+  width: 100%;
+  max-width: 850px;
+  margin-bottom: 4rem;
+}
+
+div.description p {
+  margin-bottom: 1rem;
+}
+
+div.description {
+  margin-bottom: 4rem;
+}
+
+div.lists {
+  margin-bottom: 2rem;
+}
+
+div.lists h2, div.side-bar h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+div.lists ol {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+div.lists ol li {
+  margin-left: 1rem;
+  margin-bottom: 10px;
+}
+
+div.side-bar p {
+  margin-bottom: 1rem;
+}
+
+div.side-bar span {
+  background-color: #f6bd4c;
+}
+
+div.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6bd4c;
+  color: #fff;
+  height: 6rem;
+  border-radius: 7px;
+  font-size: 25pt;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+div.rating span {
+  font-size: 10px;
+}
+
+footer {
+  margin-top: 2rem;
+  position: relative;
+  bottom: 0;
+  background-color: #e2ae44;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
